@@ -1,0 +1,87 @@
+body,
+main,
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  gap: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  color: white;
+  background: linear-gradient(to right, #801c80, #3d6fdb);
+  height: 100vh;
+}
+
+header figure {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  height: 190px;
+}
+
+header figure img {
+  object-fit: cover;
+  width: 100%;
+  transform: scale(1.5);
+  object-position: top 27px right 0px;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 5px 0 5px 0;
+  animation: typing 11s steps(19) infinite, blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 19ch;
+  border-right: 3px solid;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  0%, 100% {
+    width: 0;
+  }
+  50% {
+    width: 19ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+main {
+  gap: 20px;
+}
+
+button {
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  width: 280px;
+  height: 40px;
+  color: black;
+  background-color: #ffffff;
+}
+
+button:hover {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+footer {
+  margin: 20px;
+}
